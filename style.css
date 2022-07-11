@@ -233,16 +233,7 @@ main .campo-perfil .foto-perfil {
     body {
         overflow-x: hidden;
     } 
-    header{
-        height: 950px;
-        min-height: 500px;
-        min-width: 700px;
-        background: #161415 url(imagens/banner7.jpg) no-repeat top center;
-        /* background-size: cover !important;
-            -webkit-background-size: cover !important; */
-        text-align: center;
-        overflow: hidden;
-    }
+    
     .nav-list {
         position: absolute;
         top: 8vh;
