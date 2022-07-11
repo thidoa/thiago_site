@@ -176,7 +176,7 @@ header hr {
 main {
     display: flex;
     background-color: #2B2B2B; 
-    height: 772px;
+    height: 950px;
 }
 
 main div {
@@ -232,11 +232,21 @@ main .campo-perfil .foto-perfil {
 @media (max-width: 999px) {
     body {
         overflow-x: hidden;
+    } 
+    header{
+        height: 950px;
+        min-height: 500px;
+        min-width: 700px;
+        background: #161415 url(imagens/banner7.jpg) no-repeat top center;
+        /* background-size: cover !important;
+            -webkit-background-size: cover !important; */
+        text-align: center;
+        overflow: hidden;
     }
     .nav-list {
         position: absolute;
         top: 8vh;
-        right: 0;
+        right: 0px;
         width: 50vw;
         height: 92vh;
         background: #F06000;
@@ -258,6 +268,7 @@ main .campo-perfil .foto-perfil {
         right: 10px;
         top: 0;
         transition: 0.5s;
+        
     }
 
     header #introduction h1{
@@ -281,13 +292,14 @@ main .campo-perfil .foto-perfil {
         vertical-align: bottom;
         width: 100%;
     } */
-
+    
     main div {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
+    } 
+    
 }
 
 .nav-list.active {
