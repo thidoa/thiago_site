@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Thiago Nóbrega</title>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js" defer></script>
 </head>
 <body>
     <div id="home"></div>
-    <nav class="menu">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Quem sou eu</a></li>
-                <li><a href="atividades/index2.html">Projetos</a></li>
-            </ul>
+    <nav class="menu" id="navbar">
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Quem sou eu</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="atividades/index2.html">Projetos</a></li>
+        </ul>
     </nav>
-    <header>
+    <header id="header" class="header-inicial">
         
         <div class="container" id="introduction">
-            <h1 class="responsive-headline"><b class='code_color'>&lt;/</b>Thiago Nóbrega<b class='code_color'>&gt;</b></h1>
-            <p>Sou desenvolvedor de sistemas em aprendizado, de uma cidadezinha no interior do RN. transformo cafeína em progamas. saiba mais sobre mim!</p>
+            <h1 class="responsive-headline"><b class='code_color' id="code-rigth">&lt;/</b><span class="animated">Thiago Nóbrega</span><b class='code_color' id="code-left"> &gt;</b></h1>
+            <p id="resumo">Sou desenvolvedor de sistemas em aprendizado, de uma cidadezinha no interior do RN. transformo cafeína em progamas. saiba mais sobre mim!</p>
         </div>
-        <hr>
-        <div class="container" id="contato">
+        <hr id="linha">
+        <div class="container contato" id="contato">
             <ul>
                 <li><a href="mailto:thiagovini200@gmail.com"><svg class="icon_envelope" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
@@ -42,7 +44,7 @@
             
               
         </div>
-        <div class="icon_seta">
+        <div class="icon_seta" id="icon-seta">
             <a href="#about">
                 <svg id="seta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -55,11 +57,88 @@
         <div class="container">
             <div class="campo-perfil"><img class="foto-perfil" src="imagens/foto-perfil-2.jpg" alt="Foto de perfil"></div>
             <div class="quem_sou_eu">
-                <h2 id="posicao">Quem sou eu?</h2>
-                <p>Me chamo Thiago Vinícius dos Santos Nóbrega, moro em Patos no interior da Paraíba, sou desenvolvedor de sistemas em processo de aprendizagem, atualmente estudo no Instituto Federal do Rio Grande do Norte(IFRN) Campus Avançado Parelhas, cursando o curso tecnico integrado em informática. Tenho interesse em prosseguir na área de progamação mais especificamente na área de <a href="https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end" target="_blank">back-end</a> mas sempre busco aprender mais aprimorando meus conhecimentos.</p>
+                <h2>Quem sou eu?</h2>
+                <p>Me chamo Thiago Vinícius dos Santos Nóbrega, atualmente moro em Patos no interior da Paraíba, sou desenvolvedor de sistemas em processo de aprendizagem, estudo no Instituto Federal da Paraíba(IFPB) Campus Patos, cursando o curso tecnico integrado em informática. Tenho interesse em prosseguir na área de progamação mais especificamente na área de <a href="https://www.alura.com.br/artigos/o-que-e-front-end-e-back-end" target="_blank">back-end</a> mas sempre busco aprender mais aprimorando meus conhecimentos.</p>
             </div>
         </div>
     </main>
+    <!-- ------------------------------------------------------------------ -->
+    <div class="div-linha">
+        <hr class="linha">
+    </div>
+    <section id="skills" class="skills">
+        
+        <span class="major">
+            <h2>Skills</h2>
+        </span>
+        <div class="features">
+            
+            <article>
+                <span class="icon brands"><img src="imagens/icon-python-degrade.png" alt=""></span>
+                <div class="content">
+                    <h3>Python</h3>
+                    <p>Depois do primeiro contato com Python, venho estudando e praticando diariamente suas funcionalidades, tenho certa experiência tanto prática quanto teórica na linguagem.</p>
+                </div>
+            </article>
+            <article>
+                <span class="icon brands"><img src="imagens/icon-django.png" alt=""></span>
+                <div class="content">
+                    <h3>Django</h3>
+                    <p>Um dos mais famosos e utilizados frameworks da linguagem Python, é um dos meus objetos de estudo e trabalho.</p>
+                </div>
+            </article>
+            <article>
+                <span class="icon brands"><img src="imagens/icon-js.png" alt=""></span>
+                <div class="content">
+                    <h3>JavaScript</h3>
+                    <p>Devido a projetos anteriores, possuo experiência tanto prática quanto teórica na linguagem Javascript.</p>
+                </div>
+            </article>
+            <article>
+                <span class="icon solid"><img src="imagens/icon-php.png" alt=""></span>
+                <div class="content">
+                    <h3>PHP</h3>
+                    <p>Devido a projetos anteriores, possuo experiência tanto prática quanto teórica na linguagem.</p>
+                </div>
+            </article>
+
+            <article>
+                <span class="icon brands"><img src="imagens/icon-html.png" alt=""></span>
+                <div class="content">
+                    <h3>HTML5</h3>
+                    <p>É uma linguagem de marcação que utilizo bastante na construção das páginas dos meus projetos.</p>
+                </div>
+            </article>
+
+            <article>
+                <span class="icon brands"><img src="imagens/icon-css.png" alt=""></span>
+                <div class="content">
+                    <h3>CSS3</h3>
+                    <p>Assim como html, o css está presente em boa parte dos meus projetos, utilizando Seletores, Propriedades de tamanho, Propriedades de espaçamento, Flexbox e Responsividade.</p>
+                </div>
+            </article>
+
+            <article>
+                <span class="icon brands"><img src="imagens/icon-bootstrap.png" alt=""></span>
+                <div class="content">
+                    <h3>Bootstrap</h3>
+                    <p>Utilizo em alguns projeto para criar meus layouts, utilizo sua documentação de forma simples e objetiva sempre atualizada.</p>
+                </div>
+            </article>
+
+            <article>
+                <span class="icon brands"><img src="imagens/icons8-c++-500.png" alt=""></span>
+                <div class="content">
+                    <h3>C/C++</h3>
+                    <p>Comecei meus estudos na área de programação com essas linguagem e devido a projetos anteriores, possuo experiência tanto prática quanto teórica</p>
+                </div>
+            </article>
+
+            
+            
+        </div>
+    </section>
     <script src="site.js"></script>
+    <script src="js/scroll-nav.js"></script>
 </body>
 </html>

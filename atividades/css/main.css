@@ -16,7 +16,8 @@ Domain Path:      /languages/
    GENERAL
    ========================================================================== */
 .dark {
-  background: #5e5e5e;
+  /* background: #5e5e5e; */
+  background: #2B2B2B;
   color: #fff;
   transition: 1s;
 }
@@ -135,7 +136,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   background-color: #3ecf8e;
   border: 1px solid #3ecf8e;
   color: #fff;
-  box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+  box-shadow: 0px 8px 9px 0px #605e5e2b;
   width: 180px;
   height: 50px;
   padding: 15px 15px;
@@ -480,15 +481,21 @@ button:focus {
   border: 1px solid #ddd;
   -moz-transition: all .8s ease;
   -webkit-transition: all .8s ease;
-  transition: all .8s ease; }
+  transition: all .8s ease; 
+  border-radius: 20px 0px;
+  height: 440px;
+}
   #services .services-item:hover {
-    border: 1px solid #3ecf8e;
+    /* border: 1px solid #3ecf8e; */
+    border: 1px solid #F06000;
     box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
     -moz-transition: all .4s ease;
     -webkit-transition: all .4s ease;
     transition: all .4s ease; }
   #services .services-item .icon {
-    background: #e3fff2;
+    /* background: #e3fff2; */
+    background: transparent;
+    border: 2px solid #F06000;
     width: 110px;
     height: 110px;
     margin: 0px auto;
@@ -497,10 +504,25 @@ button:focus {
     display: block;
     border-radius: 50%;
     position: relative;
-    margin-bottom: 25px; }
+    margin-bottom: 25px; 
+  }
+  #services .services-item .projeto-img {
+    background: #e3fff2;
+    margin: 0px auto;
+    margin-bottom: 0px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 25px; 
+  }
+  #services .services-item .projeto img {
+    border-radius: 20px 0px;
+  }
   #services .services-item .icon i {
     font-size: 40px;
-    color: #3ecf8e;
+    /* color: #3ecf8e; */
+    color: #F06000;
     position: absolute;
     left: 0;
     right: 0;
@@ -508,14 +530,49 @@ button:focus {
   #services .services-item h4 {
     font-size: 20px;
     font-weight: 600;
-    color: #151948;
+    /* color: #151948; */
+    color: #F06000;
     margin-bottom: 15px; }
   #services .services-item p {
     font-size: 16px;
-    margin-bottom: 10px;
-    /* color: #5e629c;*/
-    color: #151948;
+    margin-top: 40px;
+    /* color: #5e629c;
+    color: #151948;*/
+    color: #F06000;
+    display: inline-block;
+    /* font-size: 75%; */
+    font-weight: 700;
+    line-height: 1;
+    vertical-align: baseline;
   } 
+
+#services .projeto-services {
+  padding: 0px !important;
+  border: 1px solid #ddd;
+  -moz-transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease; 
+}
+#services .projeto-services p {
+  padding: 0px 30px 0px 30px !important;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: justify;
+  /* color: #5e629c;
+  color: #151948;*/
+  color: #F06000;
+} 
+
+/* #services .botaos {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+#services .botaos a {
+  text-align: center;
+  width: 100%;
+} */
 
 @keyframes pulse-border {
   0% {
@@ -624,3 +681,69 @@ button:focus {
       -webkit-transition: all 300ms;
       -o-transition: all 300ms;
       transition: all 300ms; }
+
+
+
+.projeto .projeto-img {
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  
+}
+
+.projeto .projeto-img img {
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.projeto-img img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ELEMENTOS HTML, CSS, JS...*/
+
+.text-center span {
+  padding: 0.25em 0.4em;
+  color: #fff;
+  display: inline-block;
+  /* font-size: 75%; */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.text-center .html {
+  background-color: #E65100;
+}
+
+.text-center .css {
+  background-color: #0277BD;
+}
+
+.text-center .python {
+  background: linear-gradient(to right ,#0277BD, #FFC107);
+  /*4343BF*/
+}
+
+.text-center .pyscript {
+  background-color: #FDA703;
+}
+
+.text-center .api {
+  background-color: #4343BF;
+}
+
+.text-center .mysql {
+  background-color: #00BCD4;
+}
+
+.text-center .php {
+  background-color: #4788C7;
+}
