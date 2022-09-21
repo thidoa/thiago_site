@@ -5,6 +5,10 @@
 * {
     padding: 0;
     margin: 0;
+
+    /* outline: 1px dotted red
+
+       */
 }
 
 ::-webkit-scrollbar {
@@ -315,7 +319,7 @@ main .campo-perfil .foto-perfil {
     text-align: left;
     width: 100%;
     padding: 1em;
-    margin-left: 129px;
+    /* margin-left: 129px; */
     color: #F06000;
 }
 
