@@ -477,13 +477,19 @@ button:focus {
    About 
    ========================================================================== */
 #services .services-item {
+  display: flex;
   padding: 60px 30px;
   border: 1px solid #ddd;
   -moz-transition: all .8s ease;
   -webkit-transition: all .8s ease;
   transition: all .8s ease; 
   border-radius: 20px 0px;
-  height: 440px;
+  height: 500px;
+  flex-direction: column;
+    justify-content: space-between;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
   #services .services-item:hover {
     /* border: 1px solid #3ecf8e; */
@@ -546,8 +552,53 @@ button:focus {
     vertical-align: baseline;
   } 
 
+  .btn-border-visitar {
+    cursor: pointer;
+    background-color: #3ecf8e;
+    border: 1px solid #3ecf8e;
+    color: #fff;
+    box-shadow: 0px 8px 9px 0px #605e5e2b;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .btn-border-visitar:hover {
+    color: #3ecf8e;
+    background-color: transparent;
+    border-color: #3ecf8e;
+    transform: translateY(-2px); 
+  }
+
+  .btn-border-code {
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: #3ecf8e;
+    color: #3ecf8e;
+    padding: 10px; 
+    margin: 10px;
+  }
+  
+  .btn-border-code:hover {
+    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+    transform: translateY(-2px); 
+  }
+  /* #services .services-item .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #services .services-item .links a {
+    width: 100%;
+    text-align: center;
+  } */
+
 #services .projeto-services {
   padding: 0px !important;
+  margin: 10px;
   border: 1px solid #ddd;
   -moz-transition: all .8s ease;
   -webkit-transition: all .8s ease;
@@ -563,16 +614,25 @@ button:focus {
   color: #F06000;
 } 
 
-/* #services .botaos {
+#services .botaos {
   display: flex;
-  width: 60%;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
   justify-content: space-between;
+  gap: 8px;
+  /* border: 1px dashed red; */
 }
 
 #services .botaos a {
   text-align: center;
   width: 100%;
-} */
+  color: #F06000;
+  border-radius: 3px;
+  border: 1px solid #F06000;
+}
+
 
 @keyframes pulse-border {
   0% {
@@ -734,6 +794,10 @@ button:focus {
 
 .text-center .pyscript {
   background-color: #FDA703;
+}
+
+.text-center .javascript {
+  background-color: #FFD600;
 }
 
 .text-center .api {

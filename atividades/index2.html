@@ -12,15 +12,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/LineIcons.css">
-    <link rel="stylesheet" href="css/main.css">    
+     
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">   
     <link rel="stylesheet" href="cafe.css">
     <script src="cafe.js"></script>
 
   </head>
   
-  <body>
+  <body class="dark">
 
     <!-- Header Section Start -->
     <header id="home" class="hero-area">    
@@ -51,8 +52,8 @@
                 <label>
                   <input id="btnn" onClick="mudaModo()" name="btnn" type="checkbox" class="toggle-dark-mode">
                   <span></span>
-                  <text><img class="sol" src="café/imagens/sol_50.png" alt="Imagem ilustrativa para sol"></text>
-                  <text><img class="lua" src="café/imagens/lua_50.png" alt="Imagem ilustrativa para lua "></text>
+                  <text><img class="lua" src="café/imagens/lua_50.png" alt="Imagem ilustrativa para lua"></text>
+                  <text><img class="sol" src="café/imagens/sol_50.png" alt="Imagem ilustrativa para sol "></text>
                 </label>
               </li>
               
@@ -88,7 +89,11 @@
 
         <div class="row" id="cards">
           <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          
+          
+          
+          
+          <!-- <div class="col-lg-4 col-md-6 col-xs-12">
             <a href="http://thiago.epizy.com/Thiago/index.html" target="_blank">
               <div class="services-item text-center">
                 <div class="icon">
@@ -98,10 +103,19 @@
                 <p>Testanto banco de dados <span class="mysql">mysql</span> com <span class="php">PHP</span>.</p>
               </div>
             </a>
-          </div>
+          </div> -->
+
+
+
+
+
           <!-- End Col -->
           <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          
+          
+          
+          
+          <!-- <div class="col-lg-4 col-md-6 col-xs-12">
             <a href="https://docs.google.com/presentation/d/1WZ7g_tzeRd0bDs2gj4Dr1d_1Z3ALNk3n/edit?usp=sharing&ouid=103050537932721370160&rtpof=true&sd=true" target="_blank">
               <div class="services-item text-center">
                 <div class="icon">
@@ -109,13 +123,21 @@
                 </div>
                 <h4>Atividade 2</h4>
                 <p>link para apresentação caso não funcione o que eu levei no pendrive.</p>
+                <div class="header-button">
+                  <a href="https://docs.google.com/presentation/d/1WZ7g_tzeRd0bDs2gj4Dr1d_1Z3ALNk3n/edit?usp=sharing&ouid=103050537932721370160&rtpof=true&sd=true" class="btn btn-border-visitar page-scroll" target="_blank">Visitar</a>
+                  
+                </div>
               </div>
             </a>
-          </div>
+          </div> -->
+
+
+
+
           <!-- End Col -->
           <!-- Start Col -->
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <a href="https://thidoa.github.io/API-valorant/" target="_blank">
+            <!-- <a href="https://thidoa.github.io/API-valorant/" target="_blank"> -->
               <div class="services-item text-center projeto-services">
                 <div class="projeto">
                   <div class="projeto-img">
@@ -124,14 +146,110 @@
                 </div>
                 <h4>Api Valorant</h4>
                 <p>Esse é o meu primeiro projeto realizado com <span class="pyscript">PyScript</span>, desenvolvi com o intuino de conhecer essa tecnologia e praticar <span class="html">HTML5</span>, <span class="css">CSS3</span> e <span class="python">Python</span>, cosumindo uma <span class="api">API</span> que fornece os personagens, mapas e outros elementos do jogo Valorant.</p>
-                <!-- <div class="botaos">
-                  <a href="">Visitar</a>
-                  <a href="">Code</a>
-                </div> -->
+                <div class="header-button">
+                  <a href="https://thidoa.github.io/API-valorant" class="btn btn-border-visitar page-scroll" target="_blank">Visitar</a>
+                  <a href="https://github.com/thidoa/API-valorant" class="btn btn-border-code page-scroll" target="_blank">Code</a>
+                </div>
               </div>
-            </a>
+            <!-- </a> -->
           </div>
           
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="services-item text-center projeto-services">
+                <div class="projeto">
+                  <div class="projeto-img">
+                    <img src="imagem/certificard.png" alt="">
+                  </div>
+                </div>
+                <h4>Certificard</h4>
+                <p>Esse projeto contem alguns desafios como conversor de moedas, adivinhações de números, super trunfo, tabela de classificação com pontos e uma biblioteca de filmes, desenvolvido em uma imersão dev da alura, utilizando as seguintes tecnologias, <span class="html">HTML5</span>, <span class="css">CSS3</span> e <span class="javascript">JavaScript</span></p>
+                <div class="header-button">
+                  <a href="https://thidoa.github.io/certificard/" class="btn btn-border-visitar page-scroll" target="_blank">Visitar</a>
+                  <a href="https://github.com/thidoa/certificard" class="btn btn-border-code page-scroll" target="_blank">Code</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center projeto-services">
+              <div class="projeto">
+                <div class="projeto-img">
+                  <img src="imagem/conversor_de_moeda_js.png" alt="">
+                </div>
+              </div>
+              <h4>Convesor de moedas</h4>
+              <p>Esse projeto converte dolar para real, desenvolvido em uma imersão dev da alura, utilizando as seguintes tecnologias, <span class="html">HTML5</span>, <span class="css">CSS3</span> e <span class="javascript">JavaScript</span></p>
+              <div class="header-button">
+                <a href="https://thidoa.github.io/Conversor-de-moeda-js/" class="btn btn-border-visitar page-scroll" target="_blank">Visitar</a>
+                <a href="https://github.com/thidoa/Conversor-de-moeda-js" class="btn btn-border-code page-scroll" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center projeto-services">
+              <div class="projeto">
+                <div class="projeto-img">
+                  <img src="imagem/mentalista.png" alt="">
+                </div>
+              </div>
+              <h4>Mentalista</h4>
+              <p>Esse projeto é um jogo de adivinhação de números, desenvolvido em uma imersão dev da alura, utilizando as seguintes tecnologias, <span class="html">HTML5</span>, <span class="css">CSS3</span> e <span class="javascript">JavaScript</span></p>
+              <div class="header-button">
+                <a href="https://thidoa.github.io/mentalista/" class="btn btn-border-visitar page-scroll" target="_blank">Visitar</a>
+                <a href="https://github.com/thidoa/mentalista" class="btn btn-border-code page-scroll" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center projeto-services">
+              <div class="projeto">
+                <div class="projeto-img">
+                  <img src="imagem/super_trunfo.png" alt="">
+                </div>
+              </div>
+              <h4>Super Trunfo</h4>
+              <p>Esse projeto é um jogo de super trunfo com cartas de pokemon, desenvolvido em uma imersão dev da alura, utilizando as seguintes tecnologias, <span class="html">HTML5</span>, <span class="css">CSS3</span> e <span class="javascript">JavaScript</span></p>
+              <div class="header-button">
+                <a href="https://thidoa.github.io/super-trunfo/" class="btn btn-border-visitar page-scroll" target="_blank">Visitar</a>
+                <a href="https://github.com/thidoa/super-trunfo" class="btn btn-border-code page-scroll" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center projeto-services">
+              <div class="projeto">
+                <div class="projeto-img">
+                  <img src="imagem/tabela_classificacao.png" alt="">
+                </div>
+              </div>
+              <h4>Tabela de classificação</h4>
+              <p>Esse projeto é uma tebela de classificação de pontos de uma partida, desenvolvido em uma imersão dev da alura, utilizando as seguintes tecnologias, <span class="html">HTML5</span>, <span class="css">CSS3</span> e <span class="javascript">JavaScript</span></p>
+              <div class="header-button">
+                <a href="https://thidoa.github.io/tabela-classificacao/" class="btn btn-border-visitar page-scroll" target="_blank">Visitar</a>
+                <a href="https://github.com/thidoa/tabela-classificacao" class="btn btn-border-code page-scroll" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center projeto-services">
+              <div class="projeto">
+                <div class="projeto-img">
+                  <img src="imagem/aluraflix.png" alt="">
+                </div>
+              </div>
+              <h4>AluraFlix</h4>
+              <p>Esse projeto é uma biblioteca de filmes, desenvolvido em uma imersão dev da alura, utilizando as seguintes tecnologias, <span class="html">HTML5</span>, <span class="css">CSS3</span> e <span class="javascript">JavaScript</span></p>
+              <div class="header-button">
+                <a href="https://thidoa.github.io/aluraflix/" class="btn btn-border-visitar page-scroll" target="_blank">Visitar</a>
+                <a href="https://github.com/thidoa/aluraflix" class="btn btn-border-code page-scroll" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
           <!-- End Col -->
 
         </div>
