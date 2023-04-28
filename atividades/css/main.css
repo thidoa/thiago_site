@@ -811,3 +811,7 @@ button:focus {
 .text-center .php {
   background-color: #4788C7;
 }
+
+.text-center .django {
+  background-color: #0c4b33;
+}
